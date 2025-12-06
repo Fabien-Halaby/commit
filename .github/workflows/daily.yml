@@ -2,9 +2,8 @@ name: Daily Auto Commit
 
 on:
   schedule:
-    # Tous les jours à minuit UTC (00:00)
-    - cron: "0 0 * * *"
-  # Pour tester manuellement depuis l’onglet Actions
+    - cron: "0 */4 * * *"
+
   workflow_dispatch:
 
 permissions:
